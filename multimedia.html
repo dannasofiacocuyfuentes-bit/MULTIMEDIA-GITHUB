@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MULTIMEDIA</title>
+</head>
+<body>
+    <h1>MULTIMEDIA</h1>
+    <h2>IMAGEN</h2>
+    <img 8px="" alt="FLORECITAS" border-radius:="8px"src="https://images.pexels.com/photos/17606781/pexels-photo-17606781.jpeg"
+     width="20%"height="20%">
+<br>
+<style>
+    img { max-width: 70%; height:70%; border: radius 100px;}
+</style>
+<br>
+<h2>VIDEO DE YOUTUBE</h2>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/VEfkNHTjgs8?si=fwqCnoG5rJtE7Bmh" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</video>
+<br> <br> <br> <br>
+<h2>VIDEO DESCARGADO</h2>
+<video width="640" height="315" poster="https://images.pexels.com/photos/17606781/pexels-photo-17606781.jpeg" controls>
+    <source src="flor.mp4.mp4" type="video/mp4"> </video>
+    <style>
+        video { max-width: 70%; height:70%; border: radius 50px;}
+    </style>
+    <audio id="musicaFondo" src="musica.mp3..mp3"loop> </audio>
+    <button id="botonMusica">▶ Reproducir musica </button>
+    <script>
+    const audio = document.getElementById('musicaFondo');
+    const boton = document.getElementById('botonMusica');
+    boton.addEventListener('click', () => {
+    if (audio.paused){ audio.play(); boton.textContent = '⏸ Pausar'; }
+    else { audio.pause(); boton.textContent = '▶ Reproducir musica' }
+    });
+    </script>
+</body>
+</html>
+
+
+
+
